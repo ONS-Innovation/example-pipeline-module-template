@@ -3,14 +3,16 @@ kind: Component
 metadata:
   name: ${{ values.name }}
   description: ${{ values.description | dump }}
+  tags:
+    - module
   annotations:
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: ${{ values.project_slug }}
   links:
     - url: https://codespaces.new/${{ values.project_slug }}
-      title: Codespaces
+      title: Create Codespace
 spec:
-  type: pipeline
+  type: module
   lifecycle: experimental
   owner: ${{ values.owner | dump }}
   system: ${{ values.system | dump }}
