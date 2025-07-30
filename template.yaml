@@ -7,8 +7,8 @@ metadata:
   tags:
     - module
 spec:
-  owner: group:github
-  type: component
+  owner: "group:default/spotify-backstage-trial-team"
+  type: template
 
   parameters:
     - title: About
